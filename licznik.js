@@ -44,7 +44,7 @@ var Counter = React.createClass({
     },
 
     componentWillUnmount() {
-      console.log("odpisanie zdarzeń z DOM");
+      console.log("odpinanie zdarzeń z DOM");
     },
 
 
