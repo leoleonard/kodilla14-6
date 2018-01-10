@@ -18,6 +18,36 @@ var Counter = React.createClass({
       });
     },
 
+    getDefaultProps: function() {
+    console.log('Wartości domyślne');
+  },
+
+  componentWillMount() {
+      console.log('Przed przyłączeniem komponentu');
+    },
+
+    componentDidMount() {
+      console.log("Po przyłączeniu kompenentu");
+    },
+
+    componentWillReceiveProps() {
+      console.log("aktualizwanie stanu komponentu na podstawie nadchodzących wiadomości");
+    },
+
+    shouldComponentUpdate() {
+      console.log("czy faktycznie trzeba nadpisac komponent?");
+      return true;
+    },
+
+    componentDidUpadete() {
+      console.log("nadpisanie DOM");
+    },
+
+    componentWillUnmount() {
+      console.log("odpisanie zdarzeń z DOM");
+    },
+
+
 
     render: function() {
       return React.createElement("div", {className: "container"},
